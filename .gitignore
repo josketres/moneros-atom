@@ -6,3 +6,4 @@ gradle-app.setting
 
 *.iml
 .idea
+gradle.properties
