@@ -5,6 +5,7 @@ Atom feed of mexican political cartoons
 
 * http://lajornadajalisco.com.mx/category/patricio-monero/feed/
 
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <title>Moneros Atom</title>
@@ -179,3 +180,4 @@ Atom feed of mexican political cartoons
     <dc:date>2015-02-03T06:28:30Z</dc:date>
   </entry>
 </feed>
+```
