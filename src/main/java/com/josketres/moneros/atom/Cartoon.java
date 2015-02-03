@@ -6,10 +6,12 @@ public class Cartoon {
     public final String author;
     public final Date publishedDate;
     public final String image;
+    public final String link;
 
-    public Cartoon(String author, Date publishedDate) {
+    public Cartoon(String author, Date publishedDate, String link, String image) {
         this.author = author;
         this.publishedDate = publishedDate;
-        this.image = null;
+        this.link = link;
+        this.image = image;
     }
 }
