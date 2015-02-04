@@ -14,7 +14,7 @@ public class MonerosAtomFeedBuilderTest {
     public void should_create_atom_feed_with_1_item() throws Exception {
 
         SyndFeed feed = new MonerosAtomFeedBuilder()
-                .entries(Stream.of(new Cartoon("Author", new Date(), "image.link", "image.src")))
+                .entries(Stream.of(new Cartoon("Author", new Date(), "image.link", "image.src", "title")))
                 .build();
 
         SyndFeedOutput output = new SyndFeedOutput();

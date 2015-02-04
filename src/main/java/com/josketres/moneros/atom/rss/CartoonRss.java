@@ -1,19 +1,19 @@
 package com.josketres.moneros.atom.rss;
 
-import com.josketres.moneros.atom.html.ImageExtractor;
-import com.josketres.moneros.atom.html.LaJornadaImageExtractor;
+import com.josketres.moneros.atom.html.DataExtractor;
+import org.jsoup.nodes.Document;
 
 public class CartoonRss {
 
-    private ImageExtractor imageExtractor;
+    private DataExtractor<String> cartoonUrlExtractor;
 
-    public void setImageExtractor(ImageExtractor imageExtractor) {
+    public void setCartoonUrlExtractor(DataExtractor cartoonUrlExtractor) {
 
-        this.imageExtractor = imageExtractor;
+        this.cartoonUrlExtractor = cartoonUrlExtractor;
     }
 
-    protected String extractImage(String url) {
+    protected String extractImage(Document doc) {
 
-        return imageExtractor.extractImageFromUrl(url);
+        return cartoonUrlExtractor.extract(doc);
     }
 }

@@ -27,7 +27,7 @@ public class MonerosAtomFeedBuilder {
                 .parallel()
                 .map(c -> {
                     SyndEntryImpl entry = new SyndEntryImpl();
-                    entry.setTitle(c.author);
+                    entry.setTitle(c.title);
                     entry.setAuthor(c.author);
                     entry.setLink(c.link);
                     entry.setPublishedDate(c.publishedDate);

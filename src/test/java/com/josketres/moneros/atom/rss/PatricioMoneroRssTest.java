@@ -19,7 +19,7 @@ public class PatricioMoneroRssTest {
         String feedUrl = Paths.get("src/test/resources/patricio-monero-rss.xml").toAbsolutePath().toUri().toString();
 
         PatricioMoneroRss rss = new PatricioMoneroRss();
-        rss.setImageExtractor(url -> "http://moneros-atom.com/image.jpg"); // avoid making http calls in unit tests
+        rss.setCartoonUrlExtractor(url -> "http://moneros-atom.com/image.jpg"); // avoid making http calls in unit tests
         List<Cartoon> cartoons = rss.read(feedUrl);
         assertThat(cartoons, hasSize(10));
 
@@ -27,5 +27,6 @@ public class PatricioMoneroRssTest {
         assertThat(cartoons.get(0).publishedDate, sameDay(2015, Months.FEBRUARY, 2));
         assertThat(cartoons.get(0).link, equalTo("http://lajornadajalisco.com.mx/2015/02/politica-de-contacto/"));
         assertThat(cartoons.get(0).image, equalTo("http://moneros-atom.com/image.jpg"));
+        assertThat(cartoons.get(0).title, equalTo("Política de contacto"));
     }
 }

@@ -22,7 +22,7 @@ public class JsoupHelper {
                 throw new IllegalArgumentException("Only file, http or https protocols are supported.");
             }
         } catch (IOException | URISyntaxException e) {
-            throw new RuntimeException(e);
+            throw new RuntimeException("Connecting url " + url, e);
         }
     }
 

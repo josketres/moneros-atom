@@ -24,7 +24,8 @@ public class LaJornadaRssTest {
         String feedUrl = Paths.get("src/test/resources/jornada-unam-mx-rss-cartones.xml").toAbsolutePath().toUri().toString();
 
         LaJornadaRss rss = new LaJornadaRss();
-        rss.setImageExtractor(url -> "http://moneros-atom.com/image.jpg"); // avoid making http calls in unit tests
+        rss.setCartoonUrlExtractor(url -> "http://moneros-atom.com/image.jpg"); // avoid making http calls in unit tests
+        rss.setTitleExtractor(url -> "Tras los huesos de Ebrard"); // avoid making http calls in unit tests
         List<Cartoon> cartoons = rss.read(feedUrl);
         assertThat(cartoons, hasSize(4));
 
@@ -32,5 +33,6 @@ public class LaJornadaRssTest {
         assertThat(cartoons.get(0).publishedDate, sameDay(2015, Months.FEBRUARY, 2));
         assertThat(cartoons.get(0).link, equalTo(LINK));
         assertThat(cartoons.get(0).image, equalTo("http://moneros-atom.com/image.jpg"));
+        assertThat(cartoons.get(0).title, equalTo("Tras los huesos de Ebrard"));
     }
 }

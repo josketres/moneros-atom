@@ -1,21 +1,19 @@
 package com.josketres.moneros.atom.html;
 
-import java.nio.file.Paths;
-import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 import org.junit.Test;
 
-import static org.hamcrest.Matchers.equalTo;
-import static org.hamcrest.Matchers.hasSize;
-import static org.junit.Assert.*;
+import java.nio.file.Paths;
 
-public class LaJornadaImageExtractorTest {
+import static org.hamcrest.Matchers.equalTo;
+import static org.junit.Assert.assertThat;
+
+public class LaJornadaCartoonUrlExtractorTest {
 
     @Test
     public void should_extract_the_image_url_from_the_html_page() {
 
-        assertThat(new LaJornadaImageExtractor().extractImageFromUrl(pathOf("src/test/resources/jornada-unam-mx-article.html")),
+        assertThat(new LaJornadaCartoonUrlExtractor()
+                        .extract(JsoupHelper.connectAndGet(pathOf("src/test/resources/jornada-unam-mx-article.html"))),
                 equalTo("http://moneros-atom.com/cartones/magu.jpg"));
     }
 

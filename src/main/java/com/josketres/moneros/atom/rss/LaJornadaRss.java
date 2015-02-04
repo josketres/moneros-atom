@@ -1,14 +1,17 @@
 package com.josketres.moneros.atom.rss;
 
 import com.josketres.moneros.atom.Cartoon;
-import com.josketres.moneros.atom.html.ImageExtractor;
-import com.josketres.moneros.atom.html.LaJornadaImageExtractor;
+import com.josketres.moneros.atom.html.DataExtractor;
+import com.josketres.moneros.atom.html.JsoupHelper;
+import com.josketres.moneros.atom.html.LaJornadaCartoonTitleExtractor;
+import com.josketres.moneros.atom.html.LaJornadaCartoonUrlExtractor;
+import com.rometools.rome.feed.synd.SyndEntry;
 import com.rometools.rome.feed.synd.SyndFeed;
 import com.rometools.rome.io.FeedException;
 import com.rometools.rome.io.SyndFeedInput;
 import com.rometools.rome.io.XmlReader;
+import org.jsoup.nodes.Document;
 
-import java.awt.Image;
 import java.io.IOException;
 import java.io.Reader;
 import java.net.URL;
@@ -19,9 +22,12 @@ public class LaJornadaRss extends CartoonRss {
 
     public static final String FEED_URL = "http://www.jornada.unam.mx/rss/cartones.xml";
 
+    private DataExtractor<String> titleExtractor;
+
     public LaJornadaRss() {
 
-        setImageExtractor(new LaJornadaImageExtractor());
+        setCartoonUrlExtractor(new LaJornadaCartoonUrlExtractor());
+        setTitleExtractor(new LaJornadaCartoonTitleExtractor());
     }
 
     public List<Cartoon> read(String feedUrl) {
@@ -40,8 +46,21 @@ public class LaJornadaRss extends CartoonRss {
         SyndFeed feed = new SyndFeedInput().build(reader);
         return feed.getEntries()
                 .parallelStream()
-                .map(e -> new Cartoon(e.getTitle(), e.getPublishedDate(), e.getLink(), extractImage(e.getLink())))
+                .map(e -> createCartoon(e))
                 .collect(Collectors.toList());
     }
 
+    private Cartoon createCartoon(SyndEntry entry) {
+
+        Document doc = JsoupHelper.connectAndGet(entry.getLink());
+        return new Cartoon(entry.getTitle(), // author
+                entry.getPublishedDate(),
+                entry.getLink(),
+                extractImage(doc),
+                titleExtractor.extract(doc));
+    }
+
+    public void setTitleExtractor(DataExtractor<String> titleExtractor) {
+        this.titleExtractor = titleExtractor;
+    }
 }
