@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <title>Moneros Atom</title>
-  <link rel="alternate" href="http://josketres.github.io/moneros-atom/current.atom" />
-  <link rel="self" href="http://josketres.github.io/moneros-atom/current.atom"/>
-  <link rel="prev-archive" href="http://josketres.github.io/moneros-atom/archive-10-2015.atom"/>
+  <link rel="alternate" href="http://josketres.github.io/moneros-atom/archive-01.2015.atom" />
+  <link rel="current" href="http://josketres.github.io/moneros-atom/current.atom"/>
+  <link rel="self" href="http://josketres.github.io/moneros-atom/archive-01.2015.atom"/>
   <subtitle>Monos de moneros mexicanos</subtitle>
   <entry>
     <title>Política de contacto</title>
