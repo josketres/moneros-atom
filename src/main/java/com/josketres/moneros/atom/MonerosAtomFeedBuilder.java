@@ -25,18 +25,22 @@ public class MonerosAtomFeedBuilder {
 
         return entries
                 .parallel()
-                .map(c -> {
-                    SyndEntryImpl entry = new SyndEntryImpl();
-                    entry.setTitle(c.title);
-                    entry.setAuthor(c.author);
-                    entry.setLink(c.link);
-                    entry.setPublishedDate(c.publishedDate);
-                    SyndContent description = new SyndContentImpl();
-                    description.setType("text/plain");
-                    description.setValue(c.image);
-                    entry.setDescription(description);
-                    return entry;
-                }).collect(Collectors.toList());
+                .map(c -> createEntry(c))
+                .collect(Collectors.toList());
+    }
+
+    private SyndEntry createEntry(Cartoon c) {
+        
+        SyndEntryImpl entry = new SyndEntryImpl();
+        entry.setTitle(c.title);
+        entry.setAuthor(c.author);
+        entry.setLink(c.link);
+        entry.setPublishedDate(c.publishedDate);
+        SyndContent description = new SyndContentImpl();
+        description.setType("text/plain");
+        description.setValue(c.image);
+        entry.setDescription(description);
+        return entry;
     }
 
     public MonerosAtomFeedBuilder entries(Stream<Cartoon> entries) {
