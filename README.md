@@ -5,3 +5,4 @@ Atom feed of mexican political cartoons
 
 This is an archived feed (http://greenbytes.de/tech/webdav/rfc5005.html#rfc.section.4)
 http://opinion.informador.com.mx/Cartuchos/
+http://opinion.informador.com.mx/Cartuchos/feed/v
