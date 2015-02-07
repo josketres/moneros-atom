@@ -14,7 +14,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        SyndFeed feed = new MonerosAtomFeedBuilder()
+        SyndFeed feed = new FeedBuilder()
                 .entries(Stream.concat(
                         new PatricioMoneroRss().read(PatricioMoneroRss.FEED_URL).stream(),
                         new LaJornadaRss().read(LaJornadaRss.FEED_URL).stream()))

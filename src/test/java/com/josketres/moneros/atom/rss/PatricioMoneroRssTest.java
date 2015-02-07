@@ -1,10 +1,11 @@
 package com.josketres.moneros.atom.rss;
 
 import com.josketres.moneros.atom.Cartoon;
-import java.nio.file.Paths;
-import java.util.List;
 import org.exparity.hamcrest.date.Months;
 import org.junit.Test;
+
+import java.nio.file.Paths;
+import java.util.List;
 
 import static org.exparity.hamcrest.date.DateMatchers.sameDay;
 import static org.hamcrest.MatcherAssert.assertThat;

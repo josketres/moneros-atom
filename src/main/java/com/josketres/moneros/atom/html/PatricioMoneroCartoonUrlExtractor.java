@@ -10,7 +10,7 @@ public class PatricioMoneroCartoonUrlExtractor implements DataExtractor<String> 
 
     @Override
     public String extract(Document doc) {
-        
+
         Element article = doc.getElementsByTag("article").first();
         Element img = article.getElementsByTag("img").first();
         return img.attr("src");

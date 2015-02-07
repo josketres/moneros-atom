@@ -1,10 +1,11 @@
 package com.josketres.moneros.atom.html;
 
-import java.nio.file.Paths;
 import org.junit.Test;
 
+import java.nio.file.Paths;
+
 import static org.hamcrest.Matchers.notNullValue;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertThat;
 
 public class JsoupHelperTest {
 

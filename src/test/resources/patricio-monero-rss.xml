@@ -10,7 +10,8 @@
 
     <channel>
         <title>La Jornada Jalisco &#187; Patricio Monero</title>
-        <atom:link href="http://lajornadajalisco.com.mx/category/patricio-monero/feed/" rel="self" type="application/rss+xml"/>
+        <atom:link href="http://lajornadajalisco.com.mx/category/patricio-monero/feed/" rel="self"
+                   type="application/rss+xml"/>
         <link>http://lajornadajalisco.com.mx</link>
         <description>Espacio de Libertad</description>
         <lastBuildDate>Tue, 03 Feb 2015 06:10:46 +0000</lastBuildDate>
@@ -44,7 +45,8 @@
             <guid isPermaLink="false">http://lajornadajalisco.com.mx/?p=218927</guid>
             <description><![CDATA[]]></description>
             <content:encoded><![CDATA[]]></content:encoded>
-            <wfw:commentRss>http://lajornadajalisco.com.mx/2015/01/el-sistema-partidista-en-mexico/feed/</wfw:commentRss>
+            <wfw:commentRss>http://lajornadajalisco.com.mx/2015/01/el-sistema-partidista-en-mexico/feed/
+            </wfw:commentRss>
             <slash:comments>0</slash:comments>
         </item>
         <item>

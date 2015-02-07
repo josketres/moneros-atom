@@ -8,12 +8,12 @@ import java.io.StringWriter;
 import java.util.Date;
 import java.util.stream.Stream;
 
-public class MonerosAtomFeedBuilderTest {
+public class FeedBuilderTest {
 
     @Test
     public void should_create_atom_feed_with_1_item() throws Exception {
 
-        SyndFeed feed = new MonerosAtomFeedBuilder()
+        SyndFeed feed = new FeedBuilder()
                 .entries(Stream.of(new Cartoon("Author", new Date(), "image.link", "image.src", "title")))
                 .build();
 
