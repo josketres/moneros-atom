@@ -41,8 +41,7 @@ class FeedBuilder {
 
         return Arrays.asList(entries)
                 .parallelStream()
-                .peek(e -> e.setInitialDate(initialDate))
-                .map(rss -> rss.read().parallelStream())
+                .map(rss -> rss.setInitialDate(initialDate).read().parallelStream())
                 .flatMap(s -> s.map(c -> createEntry(c)))
                 .sorted(Comparator.<SyndEntry, Date>comparing(e -> e.getPublishedDate()).reversed())
                 .collect(Collectors.toList());
