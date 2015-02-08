@@ -6,8 +6,6 @@ import com.rometools.rome.feed.synd.SyndEntry;
 
 public class PatricioMoneroRss extends CartoonRss {
 
-    public static final String FEED_URL = "http://lajornadajalisco.com.mx/category/patricio-monero/feed/";
-
     public PatricioMoneroRss() {
 
         setCartoonUrlExtractor(new PatricioMoneroCartoonUrlExtractor());
@@ -21,5 +19,11 @@ public class PatricioMoneroRss extends CartoonRss {
                 e.getLink(),
                 extractImage(e.getLink()),
                 e.getTitle());
+    }
+
+    @Override
+    protected String defaultFeedUrl() {
+
+        return "http://lajornadajalisco.com.mx/category/patricio-monero/feed/";
     }
 }

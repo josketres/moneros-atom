@@ -31,6 +31,12 @@ public abstract class CartoonRss {
 
     protected abstract Cartoon createCartoon(SyndEntry e);
 
+    protected abstract String defaultFeedUrl();
+
+    public List<Cartoon> read() {
+        return read(defaultFeedUrl());
+    }
+
     public List<Cartoon> read(String feedUrl) {
 
         try (Reader reader = new XmlReader(new URL(feedUrl))) {

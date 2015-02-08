@@ -10,8 +10,6 @@ import java.util.List;
 
 public class QuchoRss extends CartoonRss {
 
-    public static final String FEED_URL = "http://opinion.informador.com.mx/Cartuchos/feed/";
-
     @Override
     protected Cartoon createCartoon(SyndEntry e) {
 
@@ -20,6 +18,11 @@ public class QuchoRss extends CartoonRss {
                 e.getLink(),
                 extractImageFromHtml(e.getContents()),
                 e.getTitle());
+    }
+
+    @Override
+    protected String defaultFeedUrl() {
+        return "http://opinion.informador.com.mx/Cartuchos/feed/";
     }
 
     private String extractImageFromHtml(List<SyndContent> contents) {

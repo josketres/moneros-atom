@@ -8,8 +8,6 @@ import com.rometools.rome.feed.synd.SyndEntry;
 
 public class LaJornadaRss extends CartoonRss {
 
-    public static final String FEED_URL = "http://www.jornada.unam.mx/rss/cartones.xml";
-
     private DataExtractor<String> titleExtractor;
 
     public LaJornadaRss() {
@@ -30,5 +28,10 @@ public class LaJornadaRss extends CartoonRss {
                 e.getLink(),
                 extractImage(e.getLink()),
                 titleExtractor.extract(e.getLink()));
+    }
+
+    @Override
+    protected String defaultFeedUrl() {
+        return "http://www.jornada.unam.mx/rss/cartones.xml";
     }
 }

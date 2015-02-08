@@ -12,32 +12,16 @@ import java.io.IOException;
 import java.io.Writer;
 import java.time.LocalDate;
 import java.time.Month;
-import java.util.Comparator;
-import java.util.Date;
-import java.util.stream.Stream;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        LocalDate initialDate = LocalDate.of(2015, Month.FEBRUARY, 1);
         SyndFeed feed = new FeedBuilder()
-                .entries(Stream.of(new PatricioMoneroRss()
-                                        .setInitialDate(initialDate)
-                                        .read(PatricioMoneroRss.FEED_URL)
-                                        .parallelStream(),
-                                new LaJornadaRss()
-                                        .setInitialDate(initialDate)
-                                        .read(LaJornadaRss.FEED_URL)
-                                        .parallelStream(),
-                                new QuchoRss()
-                                        .setInitialDate(initialDate)
-                                        .read(QuchoRss.FEED_URL)
-                                        .parallelStream())
-                                .parallel()
-                                .flatMap(x -> x)
-                                .sorted(Comparator.<Cartoon, Date>comparing(c -> c.publishedDate).reversed())
-                )
+                .initialDate(LocalDate.of(2015, Month.FEBRUARY, 1))
+                .entries(new PatricioMoneroRss(),
+                        new LaJornadaRss(),
+                        new QuchoRss())
                 .build();
 
         try (Writer writer = new FileWriter("website/current.atom", false)) {

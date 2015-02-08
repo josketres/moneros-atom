@@ -1,15 +1,16 @@
 package com.josketres.moneros.atom;
 
+import com.josketres.moneros.atom.rss.CartoonRss;
 import com.rometools.rome.feed.synd.*;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.time.LocalDate;
+import java.util.*;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 class FeedBuilder {
 
-    private Stream<Cartoon> entries;
+    private CartoonRss[] entries;
+    private LocalDate initialDate;
 
     public SyndFeed build() {
 
@@ -38,9 +39,12 @@ class FeedBuilder {
 
     private List<SyndEntry> buildEntries() {
 
-        return entries
-                .parallel()
-                .map(c -> createEntry(c))
+        return Arrays.asList(entries)
+                .parallelStream()
+                .peek(e -> e.setInitialDate(initialDate))
+                .map(rss -> rss.read().parallelStream())
+                .flatMap(s -> s.map(c -> createEntry(c)))
+                .sorted(Comparator.<SyndEntry, Date>comparing(e -> e.getPublishedDate()).reversed())
                 .collect(Collectors.toList());
     }
 
@@ -65,9 +69,15 @@ class FeedBuilder {
         return links;
     }
 
-    public FeedBuilder entries(Stream<Cartoon> entries) {
+    public FeedBuilder entries(CartoonRss... entries) {
 
         this.entries = entries;
+        return this;
+    }
+
+    public FeedBuilder initialDate(LocalDate initialDate) {
+
+        this.initialDate = initialDate;
         return this;
     }
 }
