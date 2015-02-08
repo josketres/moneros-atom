@@ -1,6 +1,5 @@
 package com.josketres.moneros.atom;
 
-import com.josketres.moneros.atom.rss.CartoonRss;
 import com.rometools.rome.feed.synd.*;
 
 import java.time.LocalDate;
@@ -10,7 +9,7 @@ import java.util.stream.Stream;
 
 class FeedBuilder {
 
-    private CartoonRss[] entries;
+    private CartoonSource[] entries;
     private LocalDate initialDate;
     private SyndFeed mergeFeed;
 
@@ -43,7 +42,9 @@ class FeedBuilder {
     private List<SyndEntry> buildEntries() {
 
         return Stream.concat(entriesStream(), mergeStream())
+                .map(e -> new EntryWrapper(e)) // wrap to override equals
                 .distinct()
+                .map(w -> w.entry) // unwrap
                 .sorted(Comparator.<SyndEntry, Date>comparing(e -> e.getPublishedDate()).reversed())
                 .collect(Collectors.toList());
     }
@@ -86,7 +87,7 @@ class FeedBuilder {
         return links;
     }
 
-    public FeedBuilder entries(CartoonRss... entries) {
+    public FeedBuilder entries(CartoonSource... entries) {
 
         this.entries = entries;
         return this;
@@ -102,5 +103,41 @@ class FeedBuilder {
 
         this.mergeFeed = mergeFeed;
         return this;
+    }
+
+    private static class EntryWrapper {
+        public final SyndEntry entry;
+
+        public EntryWrapper(SyndEntry entry) {
+            this.entry = entry;
+        }
+
+        @Override
+        public boolean equals(Object obj) {
+
+            if (obj instanceof EntryWrapper) {
+                SyndEntry other = ((EntryWrapper) obj).entry;
+                return equal(entry.getPublishedDate(), other.getPublishedDate())
+                        && equal(entry.getAuthor(), other.getAuthor())
+                        && equal(entry.getTitle(), other.getTitle())
+                        && equal(entry.getLink(), other.getLink());
+            }
+            return false;
+        }
+
+        private boolean equal(Object a, Object b) {
+
+            return com.google.common.base.Objects.equal(a, b);
+        }
+
+        @Override
+        public int hashCode() {
+
+            return com.google.common.base.Objects.hashCode(
+                    entry.getPublishedDate(),
+                    entry.getAuthor(),
+                    entry.getTitle(),
+                    entry.getLink());
+        }
     }
 }

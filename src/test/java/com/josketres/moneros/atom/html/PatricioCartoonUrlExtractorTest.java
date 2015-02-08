@@ -6,12 +6,12 @@ import org.junit.Test;
 import static org.hamcrest.Matchers.equalTo;
 import static org.junit.Assert.assertThat;
 
-public class PatricioMoneroCartoonUrlExtractorTest {
+public class PatricioCartoonUrlExtractorTest {
 
     @Test
     public void should_extract_the_image_url_from_the_html_page() {
 
-        assertThat(new PatricioMoneroCartoonUrlExtractor()
+        assertThat(new PatricioCartoonUrlExtractor()
                         .setReader(FileHtmlDocumentReader::readFromFile)
                         .extract("src/test/resources/patricio-monero-article.html"),
                 equalTo("http://lajornadajalisco.com.mx/wp-content/uploads/2015/02/Jornadas-1344.jpg"));

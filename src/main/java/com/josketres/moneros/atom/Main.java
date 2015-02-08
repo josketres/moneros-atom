@@ -1,7 +1,7 @@
 package com.josketres.moneros.atom;
 
 import com.josketres.moneros.atom.rss.LaJornadaRss;
-import com.josketres.moneros.atom.rss.PatricioMoneroRss;
+import com.josketres.moneros.atom.rss.PatricioRss;
 import com.josketres.moneros.atom.rss.QuchoRss;
 import com.rometools.rome.feed.synd.SyndFeed;
 import com.rometools.rome.io.FeedException;
@@ -14,6 +14,8 @@ import java.io.IOException;
 import java.io.Reader;
 import java.io.Writer;
 import java.net.URL;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.time.LocalDate;
 import java.time.Month;
 
@@ -25,11 +27,18 @@ public class Main {
 
         SyndFeed feed = new FeedBuilder()
                 .initialDate(LocalDate.of(2015, Month.FEBRUARY, 1))
-                .entries(new PatricioMoneroRss(),
+                .entries(new PatricioRss(),
                         new LaJornadaRss(),
                         new QuchoRss())
                 .mergeWith(readCurrentFromServer())
                 .build();
+
+        try {
+            Files.createDirectory(Paths.get("website"));
+            Files.createFile(Paths.get("website/current.atom"));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
 
         try (Writer writer = new FileWriter("website/current.atom", false)) {
             new SyndFeedOutput().output(feed, writer, false);

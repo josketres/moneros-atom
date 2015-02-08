@@ -12,14 +12,14 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.hasSize;
 
-public class PatricioMoneroRssTest {
+public class PatricioRssTest {
 
     @Test
     public void should_read_rss() throws Exception {
 
         String feedUrl = Paths.get("src/test/resources/patricio-monero-rss.xml").toAbsolutePath().toUri().toString();
 
-        PatricioMoneroRss rss = new PatricioMoneroRss();
+        PatricioRss rss = new PatricioRss();
         rss.setCartoonUrlExtractor(url -> "http://moneros-atom.com/image.jpg"); // avoid making http calls in unit tests
         List<Cartoon> cartoons = rss.read(feedUrl);
         assertThat(cartoons, hasSize(10));

@@ -29,7 +29,7 @@ public class CartoonRssMock extends CartoonRss {
         return null;
     }
 
-    public static CartoonRss of(Cartoon... cartoons) {
+    public static CartoonSource of(Cartoon... cartoons) {
         return new CartoonRssMock(cartoons);
     }
 }

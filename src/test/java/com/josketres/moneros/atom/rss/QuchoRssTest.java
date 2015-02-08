@@ -17,7 +17,6 @@ import static org.hamcrest.Matchers.hasSize;
 public class QuchoRssTest {
 
     private static final LocalDate FEB_1_2015 = LocalDate.of(2015, Month.FEBRUARY, 1);
-    ;
 
     @Test
     public void should_read_rss() throws Exception {

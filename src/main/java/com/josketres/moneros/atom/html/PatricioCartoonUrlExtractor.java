@@ -6,7 +6,7 @@ import org.jsoup.nodes.Element;
 /**
  * Extracts the image URL from an html entry.
  */
-public class PatricioMoneroCartoonUrlExtractor implements DataExtractor<String> {
+public class PatricioCartoonUrlExtractor implements DataExtractor<String> {
 
     private HtmlDocumentReader reader = DEFAULT_READER;
 

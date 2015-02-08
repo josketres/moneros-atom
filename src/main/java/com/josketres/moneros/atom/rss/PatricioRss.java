@@ -1,14 +1,14 @@
 package com.josketres.moneros.atom.rss;
 
 import com.josketres.moneros.atom.Cartoon;
-import com.josketres.moneros.atom.html.PatricioMoneroCartoonUrlExtractor;
+import com.josketres.moneros.atom.html.PatricioCartoonUrlExtractor;
 import com.rometools.rome.feed.synd.SyndEntry;
 
-public class PatricioMoneroRss extends CartoonRss {
+public class PatricioRss extends CartoonRss {
 
-    public PatricioMoneroRss() {
+    public PatricioRss() {
 
-        setCartoonUrlExtractor(new PatricioMoneroCartoonUrlExtractor());
+        setCartoonUrlExtractor(new PatricioCartoonUrlExtractor());
     }
 
     @Override

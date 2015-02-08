@@ -21,7 +21,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.stream.Collectors;
 
-public abstract class CartoonRss {
+public abstract class CartoonRss implements com.josketres.moneros.atom.CartoonSource {
 
     private static final LocalDate JAN_1_1970 = LocalDate.of(1970, Month.JANUARY, 1);
 
@@ -33,6 +33,7 @@ public abstract class CartoonRss {
 
     protected abstract String defaultFeedUrl();
 
+    @Override
     public List<Cartoon> read() {
         return read(defaultFeedUrl());
     }
@@ -81,6 +82,7 @@ public abstract class CartoonRss {
         return null;
     }
 
+    @Override
     public boolean hasErrors() {
         return !errorEntries.isEmpty();
     }
@@ -97,6 +99,7 @@ public abstract class CartoonRss {
         return cartoonUrlExtractor.extract(url);
     }
 
+    @Override
     public CartoonRss setInitialDate(LocalDate initialDate) {
         this.initialDate = initialDate;
         return this;
