@@ -10,6 +10,7 @@ import com.rometools.rome.io.SyndFeedOutput;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Comparator;
+import java.util.Date;
 import java.util.stream.Stream;
 
 public class Main {
@@ -17,13 +18,15 @@ public class Main {
     public static void main(String[] args) {
 
         SyndFeed feed = new FeedBuilder()
-                .entries(Stream.of(
-                                new PatricioMoneroRss().read(PatricioMoneroRss.FEED_URL).stream(),
-                                new LaJornadaRss().read(LaJornadaRss.FEED_URL).stream(),
-                                new QuchoRss().read(QuchoRss.FEED_URL).stream()
-                        ).parallel()
+                .entries(Stream.of(new PatricioMoneroRss()
+                                        .read(PatricioMoneroRss.FEED_URL).parallelStream(),
+                                new LaJornadaRss()
+                                        .read(LaJornadaRss.FEED_URL).parallelStream(),
+                                new QuchoRss()
+                                        .read(QuchoRss.FEED_URL).parallelStream())
+                                .parallel()
                                 .flatMap(x -> x)
-                                .sorted(Comparator.comparing(c -> c.publishedDate))
+                                .sorted(Comparator.<Cartoon, Date>comparing(c -> c.publishedDate).reversed())
                 )
                 .build();
 

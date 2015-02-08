@@ -4,251 +4,17 @@
   <link rel="self" href="http://josketres.github.io/moneros-atom/current.atom" />
   <subtitle>Monos de moneros mexicanos</subtitle>
   <entry>
-    <title>Todo con medida</title>
-    <link rel="alternate" href="http://lajornadajalisco.com.mx/2015/01/todo-con-medida/" />
-    <link rel="image" href="http://lajornadajalisco.com.mx/wp-content/uploads/2015/01/unnamed-14.jpg" />
+    <title>Irregularidad</title>
+    <link rel="alternate" href="http://rss.feedsportal.com/c/32833/f/626145/p/1/s/35b81f4f/l/0L0Sjornada0Bunam0Bmx0C20A150C0A20C0A80Cindex0Bphp0Dsection0Fcartones0Gid0F0A0Gpartner0Frss/story01.htm" />
+    <link rel="image" href="http://www.jornada.unam.mx/2015/02/08/cartones/hernandez.jpg" />
     <author>
-      <name>Patricio Monero</name>
+      <name>Hernández</name>
     </author>
-    <updated>2015-01-19T15:16:21Z</updated>
-    <published>2015-01-19T15:16:21Z</published>
-    <summary type="html">&lt;img style='width:100px; height:auto;' src='http://lajornadajalisco.com.mx/wp-content/uploads/2015/01/unnamed-14.jpg' /&gt;</summary>
-    <dc:creator>Patricio Monero</dc:creator>
-    <dc:date>2015-01-19T15:16:21Z</dc:date>
-  </entry>
-  <entry>
-    <title>Eso es compromiso</title>
-    <link rel="alternate" href="http://lajornadajalisco.com.mx/2015/01/eso-es-compromiso/" />
-    <link rel="image" href="http://lajornadajalisco.com.mx/wp-content/uploads/2015/01/02a_3135_carton.jpg" />
-    <author>
-      <name>Patricio Monero</name>
-    </author>
-    <updated>2015-01-20T17:59:25Z</updated>
-    <published>2015-01-20T17:59:25Z</published>
-    <summary type="html">&lt;img style='width:100px; height:auto;' src='http://lajornadajalisco.com.mx/wp-content/uploads/2015/01/02a_3135_carton.jpg' /&gt;</summary>
-    <dc:creator>Patricio Monero</dc:creator>
-    <dc:date>2015-01-20T17:59:25Z</dc:date>
-  </entry>
-  <entry>
-    <title>No se asusten</title>
-    <link rel="alternate" href="http://lajornadajalisco.com.mx/2015/01/no-se-asusten/" />
-    <link rel="image" href="http://lajornadajalisco.com.mx/wp-content/uploads/2015/01/02a_3136_carton.jpg" />
-    <author>
-      <name>Patricio Monero</name>
-    </author>
-    <updated>2015-01-21T15:58:53Z</updated>
-    <published>2015-01-21T15:58:53Z</published>
-    <summary type="html">&lt;img style='width:100px; height:auto;' src='http://lajornadajalisco.com.mx/wp-content/uploads/2015/01/02a_3136_carton.jpg' /&gt;</summary>
-    <dc:creator>Patricio Monero</dc:creator>
-    <dc:date>2015-01-21T15:58:53Z</dc:date>
-  </entry>
-  <entry>
-    <title>¿Quién dice yo?</title>
-    <link rel="alternate" href="http://lajornadajalisco.com.mx/2015/01/quien-dice-yo/" />
-    <link rel="image" href="http://lajornadajalisco.com.mx/wp-content/uploads/2015/01/04a_3137_carton.jpg" />
-    <author>
-      <name>Patricio Monero</name>
-    </author>
-    <updated>2015-01-22T16:02:02Z</updated>
-    <published>2015-01-22T16:02:02Z</published>
-    <summary type="html">&lt;img style='width:100px; height:auto;' src='http://lajornadajalisco.com.mx/wp-content/uploads/2015/01/04a_3137_carton.jpg' /&gt;</summary>
-    <dc:creator>Patricio Monero</dc:creator>
-    <dc:date>2015-01-22T16:02:02Z</dc:date>
-  </entry>
-  <entry>
-    <title>Todo se vale</title>
-    <link rel="alternate" href="http://lajornadajalisco.com.mx/2015/01/todo-se-vale/" />
-    <link rel="image" href="http://lajornadajalisco.com.mx/wp-content/uploads/2015/01/03a_3138_carton.jpg" />
-    <author>
-      <name>Patricio Monero</name>
-    </author>
-    <updated>2015-01-23T20:24:13Z</updated>
-    <published>2015-01-23T20:24:13Z</published>
-    <summary type="html">&lt;img style='width:100px; height:auto;' src='http://lajornadajalisco.com.mx/wp-content/uploads/2015/01/03a_3138_carton.jpg' /&gt;</summary>
-    <dc:creator>Patricio Monero</dc:creator>
-    <dc:date>2015-01-23T20:24:13Z</dc:date>
-  </entry>
-  <entry>
-    <title>Cartón del día</title>
-    <link rel="alternate" href="http://opinion.informador.com.mx/Cartuchos/2015/01/26/carton-del-dia-449/" />
-    <link rel="image" href="http://opinion.informador.com.mx/Cartuchos/wp-content/uploads/sites/22/2015/01/carton-del-dia11.jpg" />
-    <author>
-      <name>Qucho Monero</name>
-    </author>
-    <updated>2015-01-26T14:05:20Z</updated>
-    <published>2015-01-26T14:05:20Z</published>
-    <summary type="html">&lt;img style='width:100px; height:auto;' src='http://opinion.informador.com.mx/Cartuchos/wp-content/uploads/sites/22/2015/01/carton-del-dia11.jpg' /&gt;</summary>
-    <dc:creator>Qucho Monero</dc:creator>
-    <dc:date>2015-01-26T14:05:20Z</dc:date>
-  </entry>
-  <entry>
-    <title>Crisis mediática</title>
-    <link rel="alternate" href="http://lajornadajalisco.com.mx/2015/01/crisis-mediatica/" />
-    <link rel="image" href="http://lajornadajalisco.com.mx/wp-content/uploads/2015/01/Jornadas-1339.jpg" />
-    <author>
-      <name>Patricio Monero</name>
-    </author>
-    <updated>2015-01-26T17:21:58Z</updated>
-    <published>2015-01-26T17:21:58Z</published>
-    <summary type="html">&lt;img style='width:100px; height:auto;' src='http://lajornadajalisco.com.mx/wp-content/uploads/2015/01/Jornadas-1339.jpg' /&gt;</summary>
-    <dc:creator>Patricio Monero</dc:creator>
-    <dc:date>2015-01-26T17:21:58Z</dc:date>
-  </entry>
-  <entry>
-    <title>Cartón del día</title>
-    <link rel="alternate" href="http://opinion.informador.com.mx/Cartuchos/2015/01/27/carton-del-dia-450/" />
-    <link rel="image" href="http://opinion.informador.com.mx/Cartuchos/wp-content/uploads/sites/22/2015/01/CARTON-DEL-DIA2.jpg" />
-    <author>
-      <name>Qucho Monero</name>
-    </author>
-    <updated>2015-01-27T13:46:47Z</updated>
-    <published>2015-01-27T13:46:47Z</published>
-    <summary type="html">&lt;img style='width:100px; height:auto;' src='http://opinion.informador.com.mx/Cartuchos/wp-content/uploads/sites/22/2015/01/CARTON-DEL-DIA2.jpg' /&gt;</summary>
-    <dc:creator>Qucho Monero</dc:creator>
-    <dc:date>2015-01-27T13:46:47Z</dc:date>
-  </entry>
-  <entry>
-    <title>Cartón del día</title>
-    <link rel="alternate" href="http://opinion.informador.com.mx/Cartuchos/2015/01/28/carton-del-dia-451/" />
-    <link rel="image" href="http://opinion.informador.com.mx/Cartuchos/wp-content/uploads/sites/22/2015/01/carton-del-dia12.jpg" />
-    <author>
-      <name>Qucho Monero</name>
-    </author>
-    <updated>2015-01-28T13:57:51Z</updated>
-    <published>2015-01-28T13:57:51Z</published>
-    <summary type="html">&lt;img style='width:100px; height:auto;' src='http://opinion.informador.com.mx/Cartuchos/wp-content/uploads/sites/22/2015/01/carton-del-dia12.jpg' /&gt;</summary>
-    <dc:creator>Qucho Monero</dc:creator>
-    <dc:date>2015-01-28T13:57:51Z</dc:date>
-  </entry>
-  <entry>
-    <title>Una injusticia más a la lista</title>
-    <link rel="alternate" href="http://lajornadajalisco.com.mx/2015/01/una-injusticia-mas-a-la-lista/" />
-    <link rel="image" href="http://lajornadajalisco.com.mx/wp-content/uploads/2015/01/02a_3143_carton.jpg" />
-    <author>
-      <name>Patricio Monero</name>
-    </author>
-    <updated>2015-01-28T15:09:11Z</updated>
-    <published>2015-01-28T15:09:11Z</published>
-    <summary type="html">&lt;img style='width:100px; height:auto;' src='http://lajornadajalisco.com.mx/wp-content/uploads/2015/01/02a_3143_carton.jpg' /&gt;</summary>
-    <dc:creator>Patricio Monero</dc:creator>
-    <dc:date>2015-01-28T15:09:11Z</dc:date>
-  </entry>
-  <entry>
-    <title>Cartón del día</title>
-    <link rel="alternate" href="http://opinion.informador.com.mx/Cartuchos/2015/01/29/carton-del-dia-452/" />
-    <link rel="image" href="http://opinion.informador.com.mx/Cartuchos/wp-content/uploads/sites/22/2015/01/carton-del-dia13.jpg" />
-    <author>
-      <name>Qucho Monero</name>
-    </author>
-    <updated>2015-01-29T14:03:40Z</updated>
-    <published>2015-01-29T14:03:40Z</published>
-    <summary type="html">&lt;img style='width:100px; height:auto;' src='http://opinion.informador.com.mx/Cartuchos/wp-content/uploads/sites/22/2015/01/carton-del-dia13.jpg' /&gt;</summary>
-    <dc:creator>Qucho Monero</dc:creator>
-    <dc:date>2015-01-29T14:03:40Z</dc:date>
-  </entry>
-  <entry>
-    <title>Cartón del día</title>
-    <link rel="alternate" href="http://opinion.informador.com.mx/Cartuchos/2015/01/30/carton-del-dia-453/" />
-    <link rel="image" href="http://opinion.informador.com.mx/Cartuchos/wp-content/uploads/sites/22/2015/01/carton-del-dia14.jpg" />
-    <author>
-      <name>Qucho Monero</name>
-    </author>
-    <updated>2015-01-30T14:03:43Z</updated>
-    <published>2015-01-30T14:03:43Z</published>
-    <summary type="html">&lt;img style='width:100px; height:auto;' src='http://opinion.informador.com.mx/Cartuchos/wp-content/uploads/sites/22/2015/01/carton-del-dia14.jpg' /&gt;</summary>
-    <dc:creator>Qucho Monero</dc:creator>
-    <dc:date>2015-01-30T14:03:43Z</dc:date>
-  </entry>
-  <entry>
-    <title>El sistema partidista en México</title>
-    <link rel="alternate" href="http://lajornadajalisco.com.mx/2015/01/el-sistema-partidista-en-mexico/" />
-    <link rel="image" href="http://lajornadajalisco.com.mx/wp-content/uploads/2015/01/02a_3145_carton.jpg" />
-    <author>
-      <name>Patricio Monero</name>
-    </author>
-    <updated>2015-01-30T20:53:25Z</updated>
-    <published>2015-01-30T20:53:25Z</published>
-    <summary type="html">&lt;img style='width:100px; height:auto;' src='http://lajornadajalisco.com.mx/wp-content/uploads/2015/01/02a_3145_carton.jpg' /&gt;</summary>
-    <dc:creator>Patricio Monero</dc:creator>
-    <dc:date>2015-01-30T20:53:25Z</dc:date>
-  </entry>
-  <entry>
-    <title>Política de contacto</title>
-    <link rel="alternate" href="http://lajornadajalisco.com.mx/2015/02/politica-de-contacto/" />
-    <link rel="image" href="http://lajornadajalisco.com.mx/wp-content/uploads/2015/02/Jornadas-1344.jpg" />
-    <author>
-      <name>Patricio Monero</name>
-    </author>
-    <updated>2015-02-02T16:36:17Z</updated>
-    <published>2015-02-02T16:36:17Z</published>
-    <summary type="html">&lt;img style='width:100px; height:auto;' src='http://lajornadajalisco.com.mx/wp-content/uploads/2015/02/Jornadas-1344.jpg' /&gt;</summary>
-    <dc:creator>Patricio Monero</dc:creator>
-    <dc:date>2015-02-02T16:36:17Z</dc:date>
-  </entry>
-  <entry>
-    <title>Cartón del día</title>
-    <link rel="alternate" href="http://opinion.informador.com.mx/Cartuchos/2015/02/02/carton-del-dia-454/" />
-    <link rel="image" href="http://opinion.informador.com.mx/Cartuchos/wp-content/uploads/sites/22/2015/02/Carton2.jpg" />
-    <author>
-      <name>Qucho Monero</name>
-    </author>
-    <updated>2015-02-02T17:04:32Z</updated>
-    <published>2015-02-02T17:04:32Z</published>
-    <summary type="html">&lt;img style='width:100px; height:auto;' src='http://opinion.informador.com.mx/Cartuchos/wp-content/uploads/sites/22/2015/02/Carton2.jpg' /&gt;</summary>
-    <dc:creator>Qucho Monero</dc:creator>
-    <dc:date>2015-02-02T17:04:32Z</dc:date>
-  </entry>
-  <entry>
-    <title>Cartón del día</title>
-    <link rel="alternate" href="http://opinion.informador.com.mx/Cartuchos/2015/02/03/carton-del-dia-455/" />
-    <link rel="image" href="http://opinion.informador.com.mx/Cartuchos/wp-content/uploads/sites/22/2015/02/carton-del-dia.jpg" />
-    <author>
-      <name>Qucho Monero</name>
-    </author>
-    <updated>2015-02-03T17:30:28Z</updated>
-    <published>2015-02-03T17:30:28Z</published>
-    <summary type="html">&lt;img style='width:100px; height:auto;' src='http://opinion.informador.com.mx/Cartuchos/wp-content/uploads/sites/22/2015/02/carton-del-dia.jpg' /&gt;</summary>
-    <dc:creator>Qucho Monero</dc:creator>
-    <dc:date>2015-02-03T17:30:28Z</dc:date>
-  </entry>
-  <entry>
-    <title>Cartón del día</title>
-    <link rel="alternate" href="http://opinion.informador.com.mx/Cartuchos/2015/02/04/carton-del-dia-456/" />
-    <link rel="image" href="http://opinion.informador.com.mx/Cartuchos/wp-content/uploads/sites/22/2015/02/carton-del-dia1.jpg" />
-    <author>
-      <name>Qucho Monero</name>
-    </author>
-    <updated>2015-02-04T13:49:40Z</updated>
-    <published>2015-02-04T13:49:40Z</published>
-    <summary type="html">&lt;img style='width:100px; height:auto;' src='http://opinion.informador.com.mx/Cartuchos/wp-content/uploads/sites/22/2015/02/carton-del-dia1.jpg' /&gt;</summary>
-    <dc:creator>Qucho Monero</dc:creator>
-    <dc:date>2015-02-04T13:49:40Z</dc:date>
-  </entry>
-  <entry>
-    <title>Cartón del día</title>
-    <link rel="alternate" href="http://opinion.informador.com.mx/Cartuchos/2015/02/05/carton-del-dia-457/" />
-    <link rel="image" href="http://opinion.informador.com.mx/Cartuchos/wp-content/uploads/sites/22/2015/02/cartondeldia600.jpg" />
-    <author>
-      <name>Qucho Monero</name>
-    </author>
-    <updated>2015-02-05T14:03:36Z</updated>
-    <published>2015-02-05T14:03:36Z</published>
-    <summary type="html">&lt;img style='width:100px; height:auto;' src='http://opinion.informador.com.mx/Cartuchos/wp-content/uploads/sites/22/2015/02/cartondeldia600.jpg' /&gt;</summary>
-    <dc:creator>Qucho Monero</dc:creator>
-    <dc:date>2015-02-05T14:03:36Z</dc:date>
-  </entry>
-  <entry>
-    <title>La desolación</title>
-    <link rel="alternate" href="http://lajornadajalisco.com.mx/2015/02/la-desolacion/" />
-    <link rel="image" href="http://lajornadajalisco.com.mx/wp-content/uploads/2015/02/02a_3151_carton.jpg" />
-    <author>
-      <name>Patricio Monero</name>
-    </author>
-    <updated>2015-02-05T16:58:14Z</updated>
-    <published>2015-02-05T16:58:14Z</published>
-    <summary type="html">&lt;img style='width:100px; height:auto;' src='http://lajornadajalisco.com.mx/wp-content/uploads/2015/02/02a_3151_carton.jpg' /&gt;</summary>
-    <dc:creator>Patricio Monero</dc:creator>
-    <dc:date>2015-02-05T16:58:14Z</dc:date>
+    <updated>2015-02-08T07:40:38Z</updated>
+    <published>2015-02-08T07:40:38Z</published>
+    <summary type="html">&lt;img src='http://www.jornada.unam.mx/2015/02/08/cartones/hernandez.jpg' /&gt;</summary>
+    <dc:creator>Hernández</dc:creator>
+    <dc:date>2015-02-08T07:40:38Z</dc:date>
   </entry>
   <entry>
     <title>Cartón del día</title>
@@ -259,21 +25,255 @@
     </author>
     <updated>2015-02-06T14:12:47Z</updated>
     <published>2015-02-06T14:12:47Z</published>
-    <summary type="html">&lt;img style='width:100px; height:auto;' src='http://opinion.informador.com.mx/Cartuchos/wp-content/uploads/sites/22/2015/02/carton-del-dia2.jpg' /&gt;</summary>
+    <summary type="html">&lt;img src='http://opinion.informador.com.mx/Cartuchos/wp-content/uploads/sites/22/2015/02/carton-del-dia2.jpg' /&gt;</summary>
     <dc:creator>Qucho Monero</dc:creator>
     <dc:date>2015-02-06T14:12:47Z</dc:date>
   </entry>
   <entry>
-    <title>Irregularidad</title>
-    <link rel="alternate" href="http://rss.feedsportal.com/c/32833/f/626145/p/1/s/35b81f4f/l/0L0Sjornada0Bunam0Bmx0C20A150C0A20C0A80Cindex0Bphp0Dsection0Fcartones0Gid0F0A0Gpartner0Frss/story01.htm" />
-    <link rel="image" href="http://www.jornada.unam.mx/2015/02/08/cartones/hernandez.jpg" />
+    <title>La desolación</title>
+    <link rel="alternate" href="http://lajornadajalisco.com.mx/2015/02/la-desolacion/" />
+    <link rel="image" href="http://lajornadajalisco.com.mx/wp-content/uploads/2015/02/02a_3151_carton.jpg" />
     <author>
-      <name>Hernández</name>
+      <name>Patricio Monero</name>
     </author>
-    <updated>2015-02-08T07:40:38Z</updated>
-    <published>2015-02-08T07:40:38Z</published>
-    <summary type="html">&lt;img style='width:100px; height:auto;' src='http://www.jornada.unam.mx/2015/02/08/cartones/hernandez.jpg' /&gt;</summary>
-    <dc:creator>Hernández</dc:creator>
-    <dc:date>2015-02-08T07:40:38Z</dc:date>
+    <updated>2015-02-05T16:58:14Z</updated>
+    <published>2015-02-05T16:58:14Z</published>
+    <summary type="html">&lt;img src='http://lajornadajalisco.com.mx/wp-content/uploads/2015/02/02a_3151_carton.jpg' /&gt;</summary>
+    <dc:creator>Patricio Monero</dc:creator>
+    <dc:date>2015-02-05T16:58:14Z</dc:date>
+  </entry>
+  <entry>
+    <title>Cartón del día</title>
+    <link rel="alternate" href="http://opinion.informador.com.mx/Cartuchos/2015/02/05/carton-del-dia-457/" />
+    <link rel="image" href="http://opinion.informador.com.mx/Cartuchos/wp-content/uploads/sites/22/2015/02/cartondeldia600.jpg" />
+    <author>
+      <name>Qucho Monero</name>
+    </author>
+    <updated>2015-02-05T14:03:36Z</updated>
+    <published>2015-02-05T14:03:36Z</published>
+    <summary type="html">&lt;img src='http://opinion.informador.com.mx/Cartuchos/wp-content/uploads/sites/22/2015/02/cartondeldia600.jpg' /&gt;</summary>
+    <dc:creator>Qucho Monero</dc:creator>
+    <dc:date>2015-02-05T14:03:36Z</dc:date>
+  </entry>
+  <entry>
+    <title>Cartón del día</title>
+    <link rel="alternate" href="http://opinion.informador.com.mx/Cartuchos/2015/02/04/carton-del-dia-456/" />
+    <link rel="image" href="http://opinion.informador.com.mx/Cartuchos/wp-content/uploads/sites/22/2015/02/carton-del-dia1.jpg" />
+    <author>
+      <name>Qucho Monero</name>
+    </author>
+    <updated>2015-02-04T13:49:40Z</updated>
+    <published>2015-02-04T13:49:40Z</published>
+    <summary type="html">&lt;img src='http://opinion.informador.com.mx/Cartuchos/wp-content/uploads/sites/22/2015/02/carton-del-dia1.jpg' /&gt;</summary>
+    <dc:creator>Qucho Monero</dc:creator>
+    <dc:date>2015-02-04T13:49:40Z</dc:date>
+  </entry>
+  <entry>
+    <title>Cartón del día</title>
+    <link rel="alternate" href="http://opinion.informador.com.mx/Cartuchos/2015/02/03/carton-del-dia-455/" />
+    <link rel="image" href="http://opinion.informador.com.mx/Cartuchos/wp-content/uploads/sites/22/2015/02/carton-del-dia.jpg" />
+    <author>
+      <name>Qucho Monero</name>
+    </author>
+    <updated>2015-02-03T17:30:28Z</updated>
+    <published>2015-02-03T17:30:28Z</published>
+    <summary type="html">&lt;img src='http://opinion.informador.com.mx/Cartuchos/wp-content/uploads/sites/22/2015/02/carton-del-dia.jpg' /&gt;</summary>
+    <dc:creator>Qucho Monero</dc:creator>
+    <dc:date>2015-02-03T17:30:28Z</dc:date>
+  </entry>
+  <entry>
+    <title>Cartón del día</title>
+    <link rel="alternate" href="http://opinion.informador.com.mx/Cartuchos/2015/02/02/carton-del-dia-454/" />
+    <link rel="image" href="http://opinion.informador.com.mx/Cartuchos/wp-content/uploads/sites/22/2015/02/Carton2.jpg" />
+    <author>
+      <name>Qucho Monero</name>
+    </author>
+    <updated>2015-02-02T17:04:32Z</updated>
+    <published>2015-02-02T17:04:32Z</published>
+    <summary type="html">&lt;img src='http://opinion.informador.com.mx/Cartuchos/wp-content/uploads/sites/22/2015/02/Carton2.jpg' /&gt;</summary>
+    <dc:creator>Qucho Monero</dc:creator>
+    <dc:date>2015-02-02T17:04:32Z</dc:date>
+  </entry>
+  <entry>
+    <title>Política de contacto</title>
+    <link rel="alternate" href="http://lajornadajalisco.com.mx/2015/02/politica-de-contacto/" />
+    <link rel="image" href="http://lajornadajalisco.com.mx/wp-content/uploads/2015/02/Jornadas-1344.jpg" />
+    <author>
+      <name>Patricio Monero</name>
+    </author>
+    <updated>2015-02-02T16:36:17Z</updated>
+    <published>2015-02-02T16:36:17Z</published>
+    <summary type="html">&lt;img src='http://lajornadajalisco.com.mx/wp-content/uploads/2015/02/Jornadas-1344.jpg' /&gt;</summary>
+    <dc:creator>Patricio Monero</dc:creator>
+    <dc:date>2015-02-02T16:36:17Z</dc:date>
+  </entry>
+  <entry>
+    <title>El sistema partidista en México</title>
+    <link rel="alternate" href="http://lajornadajalisco.com.mx/2015/01/el-sistema-partidista-en-mexico/" />
+    <link rel="image" href="http://lajornadajalisco.com.mx/wp-content/uploads/2015/01/02a_3145_carton.jpg" />
+    <author>
+      <name>Patricio Monero</name>
+    </author>
+    <updated>2015-01-30T20:53:25Z</updated>
+    <published>2015-01-30T20:53:25Z</published>
+    <summary type="html">&lt;img src='http://lajornadajalisco.com.mx/wp-content/uploads/2015/01/02a_3145_carton.jpg' /&gt;</summary>
+    <dc:creator>Patricio Monero</dc:creator>
+    <dc:date>2015-01-30T20:53:25Z</dc:date>
+  </entry>
+  <entry>
+    <title>Cartón del día</title>
+    <link rel="alternate" href="http://opinion.informador.com.mx/Cartuchos/2015/01/30/carton-del-dia-453/" />
+    <link rel="image" href="http://opinion.informador.com.mx/Cartuchos/wp-content/uploads/sites/22/2015/01/carton-del-dia14.jpg" />
+    <author>
+      <name>Qucho Monero</name>
+    </author>
+    <updated>2015-01-30T14:03:43Z</updated>
+    <published>2015-01-30T14:03:43Z</published>
+    <summary type="html">&lt;img src='http://opinion.informador.com.mx/Cartuchos/wp-content/uploads/sites/22/2015/01/carton-del-dia14.jpg' /&gt;</summary>
+    <dc:creator>Qucho Monero</dc:creator>
+    <dc:date>2015-01-30T14:03:43Z</dc:date>
+  </entry>
+  <entry>
+    <title>Cartón del día</title>
+    <link rel="alternate" href="http://opinion.informador.com.mx/Cartuchos/2015/01/29/carton-del-dia-452/" />
+    <link rel="image" href="http://opinion.informador.com.mx/Cartuchos/wp-content/uploads/sites/22/2015/01/carton-del-dia13.jpg" />
+    <author>
+      <name>Qucho Monero</name>
+    </author>
+    <updated>2015-01-29T14:03:40Z</updated>
+    <published>2015-01-29T14:03:40Z</published>
+    <summary type="html">&lt;img src='http://opinion.informador.com.mx/Cartuchos/wp-content/uploads/sites/22/2015/01/carton-del-dia13.jpg' /&gt;</summary>
+    <dc:creator>Qucho Monero</dc:creator>
+    <dc:date>2015-01-29T14:03:40Z</dc:date>
+  </entry>
+  <entry>
+    <title>Una injusticia más a la lista</title>
+    <link rel="alternate" href="http://lajornadajalisco.com.mx/2015/01/una-injusticia-mas-a-la-lista/" />
+    <link rel="image" href="http://lajornadajalisco.com.mx/wp-content/uploads/2015/01/02a_3143_carton.jpg" />
+    <author>
+      <name>Patricio Monero</name>
+    </author>
+    <updated>2015-01-28T15:09:11Z</updated>
+    <published>2015-01-28T15:09:11Z</published>
+    <summary type="html">&lt;img src='http://lajornadajalisco.com.mx/wp-content/uploads/2015/01/02a_3143_carton.jpg' /&gt;</summary>
+    <dc:creator>Patricio Monero</dc:creator>
+    <dc:date>2015-01-28T15:09:11Z</dc:date>
+  </entry>
+  <entry>
+    <title>Cartón del día</title>
+    <link rel="alternate" href="http://opinion.informador.com.mx/Cartuchos/2015/01/28/carton-del-dia-451/" />
+    <link rel="image" href="http://opinion.informador.com.mx/Cartuchos/wp-content/uploads/sites/22/2015/01/carton-del-dia12.jpg" />
+    <author>
+      <name>Qucho Monero</name>
+    </author>
+    <updated>2015-01-28T13:57:51Z</updated>
+    <published>2015-01-28T13:57:51Z</published>
+    <summary type="html">&lt;img src='http://opinion.informador.com.mx/Cartuchos/wp-content/uploads/sites/22/2015/01/carton-del-dia12.jpg' /&gt;</summary>
+    <dc:creator>Qucho Monero</dc:creator>
+    <dc:date>2015-01-28T13:57:51Z</dc:date>
+  </entry>
+  <entry>
+    <title>Cartón del día</title>
+    <link rel="alternate" href="http://opinion.informador.com.mx/Cartuchos/2015/01/27/carton-del-dia-450/" />
+    <link rel="image" href="http://opinion.informador.com.mx/Cartuchos/wp-content/uploads/sites/22/2015/01/CARTON-DEL-DIA2.jpg" />
+    <author>
+      <name>Qucho Monero</name>
+    </author>
+    <updated>2015-01-27T13:46:47Z</updated>
+    <published>2015-01-27T13:46:47Z</published>
+    <summary type="html">&lt;img src='http://opinion.informador.com.mx/Cartuchos/wp-content/uploads/sites/22/2015/01/CARTON-DEL-DIA2.jpg' /&gt;</summary>
+    <dc:creator>Qucho Monero</dc:creator>
+    <dc:date>2015-01-27T13:46:47Z</dc:date>
+  </entry>
+  <entry>
+    <title>Crisis mediática</title>
+    <link rel="alternate" href="http://lajornadajalisco.com.mx/2015/01/crisis-mediatica/" />
+    <link rel="image" href="http://lajornadajalisco.com.mx/wp-content/uploads/2015/01/Jornadas-1339.jpg" />
+    <author>
+      <name>Patricio Monero</name>
+    </author>
+    <updated>2015-01-26T17:21:58Z</updated>
+    <published>2015-01-26T17:21:58Z</published>
+    <summary type="html">&lt;img src='http://lajornadajalisco.com.mx/wp-content/uploads/2015/01/Jornadas-1339.jpg' /&gt;</summary>
+    <dc:creator>Patricio Monero</dc:creator>
+    <dc:date>2015-01-26T17:21:58Z</dc:date>
+  </entry>
+  <entry>
+    <title>Cartón del día</title>
+    <link rel="alternate" href="http://opinion.informador.com.mx/Cartuchos/2015/01/26/carton-del-dia-449/" />
+    <link rel="image" href="http://opinion.informador.com.mx/Cartuchos/wp-content/uploads/sites/22/2015/01/carton-del-dia11.jpg" />
+    <author>
+      <name>Qucho Monero</name>
+    </author>
+    <updated>2015-01-26T14:05:20Z</updated>
+    <published>2015-01-26T14:05:20Z</published>
+    <summary type="html">&lt;img src='http://opinion.informador.com.mx/Cartuchos/wp-content/uploads/sites/22/2015/01/carton-del-dia11.jpg' /&gt;</summary>
+    <dc:creator>Qucho Monero</dc:creator>
+    <dc:date>2015-01-26T14:05:20Z</dc:date>
+  </entry>
+  <entry>
+    <title>Todo se vale</title>
+    <link rel="alternate" href="http://lajornadajalisco.com.mx/2015/01/todo-se-vale/" />
+    <link rel="image" href="http://lajornadajalisco.com.mx/wp-content/uploads/2015/01/03a_3138_carton.jpg" />
+    <author>
+      <name>Patricio Monero</name>
+    </author>
+    <updated>2015-01-23T20:24:13Z</updated>
+    <published>2015-01-23T20:24:13Z</published>
+    <summary type="html">&lt;img src='http://lajornadajalisco.com.mx/wp-content/uploads/2015/01/03a_3138_carton.jpg' /&gt;</summary>
+    <dc:creator>Patricio Monero</dc:creator>
+    <dc:date>2015-01-23T20:24:13Z</dc:date>
+  </entry>
+  <entry>
+    <title>¿Quién dice yo?</title>
+    <link rel="alternate" href="http://lajornadajalisco.com.mx/2015/01/quien-dice-yo/" />
+    <link rel="image" href="http://lajornadajalisco.com.mx/wp-content/uploads/2015/01/04a_3137_carton.jpg" />
+    <author>
+      <name>Patricio Monero</name>
+    </author>
+    <updated>2015-01-22T16:02:02Z</updated>
+    <published>2015-01-22T16:02:02Z</published>
+    <summary type="html">&lt;img src='http://lajornadajalisco.com.mx/wp-content/uploads/2015/01/04a_3137_carton.jpg' /&gt;</summary>
+    <dc:creator>Patricio Monero</dc:creator>
+    <dc:date>2015-01-22T16:02:02Z</dc:date>
+  </entry>
+  <entry>
+    <title>No se asusten</title>
+    <link rel="alternate" href="http://lajornadajalisco.com.mx/2015/01/no-se-asusten/" />
+    <link rel="image" href="http://lajornadajalisco.com.mx/wp-content/uploads/2015/01/02a_3136_carton.jpg" />
+    <author>
+      <name>Patricio Monero</name>
+    </author>
+    <updated>2015-01-21T15:58:53Z</updated>
+    <published>2015-01-21T15:58:53Z</published>
+    <summary type="html">&lt;img src='http://lajornadajalisco.com.mx/wp-content/uploads/2015/01/02a_3136_carton.jpg' /&gt;</summary>
+    <dc:creator>Patricio Monero</dc:creator>
+    <dc:date>2015-01-21T15:58:53Z</dc:date>
+  </entry>
+  <entry>
+    <title>Eso es compromiso</title>
+    <link rel="alternate" href="http://lajornadajalisco.com.mx/2015/01/eso-es-compromiso/" />
+    <link rel="image" href="http://lajornadajalisco.com.mx/wp-content/uploads/2015/01/02a_3135_carton.jpg" />
+    <author>
+      <name>Patricio Monero</name>
+    </author>
+    <updated>2015-01-20T17:59:25Z</updated>
+    <published>2015-01-20T17:59:25Z</published>
+    <summary type="html">&lt;img src='http://lajornadajalisco.com.mx/wp-content/uploads/2015/01/02a_3135_carton.jpg' /&gt;</summary>
+    <dc:creator>Patricio Monero</dc:creator>
+    <dc:date>2015-01-20T17:59:25Z</dc:date>
+  </entry>
+  <entry>
+    <title>Todo con medida</title>
+    <link rel="alternate" href="http://lajornadajalisco.com.mx/2015/01/todo-con-medida/" />
+    <link rel="image" href="http://lajornadajalisco.com.mx/wp-content/uploads/2015/01/unnamed-14.jpg" />
+    <author>
+      <name>Patricio Monero</name>
+    </author>
+    <updated>2015-01-19T15:16:21Z</updated>
+    <published>2015-01-19T15:16:21Z</published>
+    <summary type="html">&lt;img src='http://lajornadajalisco.com.mx/wp-content/uploads/2015/01/unnamed-14.jpg' /&gt;</summary>
+    <dc:creator>Patricio Monero</dc:creator>
+    <dc:date>2015-01-19T15:16:21Z</dc:date>
   </entry>
 </feed>

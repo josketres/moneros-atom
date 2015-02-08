@@ -11,7 +11,11 @@ import com.rometools.rome.io.XmlReader;
 import java.io.IOException;
 import java.io.Reader;
 import java.net.URL;
+import java.time.LocalDate;
+import java.time.Month;
+import java.time.ZoneOffset;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -19,8 +23,11 @@ import java.util.stream.Collectors;
 
 public abstract class CartoonRss {
 
+    private static final LocalDate JAN_1_1970 = LocalDate.of(1970, Month.JANUARY, 1);
+
     private DataExtractor<String> cartoonUrlExtractor;
     private List<SyndEntry> errorEntries = new ArrayList<>();
+    private LocalDate initialDate;
 
     protected abstract Cartoon createCartoon(SyndEntry e);
 
@@ -40,9 +47,19 @@ public abstract class CartoonRss {
         SyndFeed feed = new SyndFeedInput().build(reader);
         return feed.getEntries()
                 .parallelStream()
+                .filter(e -> e.getPublishedDate().after(getInitialDate()))
                 .map(e -> tryCreateCartoon(e))
                 .filter(x -> x != null)
                 .collect(Collectors.toList());
+    }
+
+    private Date getInitialDate() {
+
+        if (initialDate == null) {
+            return Date.from(JAN_1_1970.atStartOfDay().toInstant(ZoneOffset.UTC));
+        } else {
+            return Date.from(initialDate.atStartOfDay().toInstant(ZoneOffset.UTC));
+        }
     }
 
     private Cartoon tryCreateCartoon(SyndEntry entry) {
@@ -72,5 +89,10 @@ public abstract class CartoonRss {
 
     protected String extractImage(String url) {
         return cartoonUrlExtractor.extract(url);
+    }
+
+    public CartoonRss setInitialDate(LocalDate initialDate) {
+        this.initialDate = initialDate;
+        return this;
     }
 }

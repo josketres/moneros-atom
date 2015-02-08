@@ -15,7 +15,7 @@ public class PatricioMoneroRss extends CartoonRss {
 
     @Override
     protected Cartoon createCartoon(SyndEntry e) {
-        
+
         return new Cartoon("Patricio Monero",
                 e.getPublishedDate(),
                 e.getLink(),

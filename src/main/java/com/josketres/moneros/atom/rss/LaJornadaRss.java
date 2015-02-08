@@ -24,7 +24,7 @@ public class LaJornadaRss extends CartoonRss {
 
     @Override
     protected Cartoon createCartoon(SyndEntry e) {
-        
+
         return new Cartoon(e.getTitle(), // author
                 e.getPublishedDate(),
                 e.getLink(),
