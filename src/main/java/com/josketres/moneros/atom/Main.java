@@ -7,8 +7,9 @@ import com.rometools.rome.feed.synd.SyndFeed;
 import com.rometools.rome.io.FeedException;
 import com.rometools.rome.io.SyndFeedOutput;
 
+import java.io.FileWriter;
 import java.io.IOException;
-import java.io.PrintWriter;
+import java.io.Writer;
 import java.util.Comparator;
 import java.util.Date;
 import java.util.stream.Stream;
@@ -30,9 +31,8 @@ public class Main {
                 )
                 .build();
 
-        SyndFeedOutput output = new SyndFeedOutput();
-        try {
-            output.output(feed, new PrintWriter(System.out));
+        try (Writer writer = new FileWriter("website/current.atom", false)) {
+            new SyndFeedOutput().output(feed, writer, false);
         } catch (IOException | FeedException e) {
             throw new RuntimeException(e);
         }
