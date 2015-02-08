@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <title>Moneros Atom</title>
+    <link rel="self" href="http://josketres.github.io/moneros-atom/current.atom"/>
+    <subtitle>Monos de moneros mexicanos</subtitle>
+    <entry>
+        <title>Irregularidad</title>
+        <link rel="alternate"
+              href="http://rss.feedsportal.com/c/32833/f/626145/p/1/s/35b81f4f/l/0L0Sjornada0Bunam0Bmx0C20A150C0A20C0A80Cindex0Bphp0Dsection0Fcartones0Gid0F0A0Gpartner0Frss/story01.htm"/>
+        <link rel="image" href="http://www.jornada.unam.mx/2015/02/08/cartones/hernandez.jpg"/>
+        <author>
+            <name>Hernández</name>
+        </author>
+        <updated>2015-02-08T07:40:38Z</updated>
+        <published>2015-02-08T07:40:38Z</published>
+        <summary type="html">&lt;img src='http://www.jornada.unam.mx/2015/02/08/cartones/hernandez.jpg' /&gt;</summary>
+        <dc:creator>Hernández</dc:creator>
+        <dc:date>2015-02-08T07:40:38Z</dc:date>
+    </entry>
+</feed>

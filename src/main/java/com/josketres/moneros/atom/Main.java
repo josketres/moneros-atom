@@ -34,8 +34,10 @@ public class Main {
                 .build();
 
         try {
-            Files.createDirectory(Paths.get("website"));
-            Files.createFile(Paths.get("website/current.atom"));
+            if (!Files.exists(Paths.get("website"))) {
+                Files.createDirectory(Paths.get("website"));
+                Files.createFile(Paths.get("website/current.atom"));
+            }
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

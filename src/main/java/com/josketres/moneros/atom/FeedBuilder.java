@@ -117,12 +117,21 @@ class FeedBuilder {
 
             if (obj instanceof EntryWrapper) {
                 SyndEntry other = ((EntryWrapper) obj).entry;
-                return equal(entry.getPublishedDate(), other.getPublishedDate())
-                        && equal(entry.getAuthor(), other.getAuthor())
+                return equal(entry.getAuthor(), other.getAuthor())
                         && equal(entry.getTitle(), other.getTitle())
-                        && equal(entry.getLink(), other.getLink());
+                        && equal(getAlternateLink(entry), getAlternateLink(other));
             }
             return false;
+        }
+
+        private String getAlternateLink(SyndEntry entry) {
+
+            for (SyndLink link : entry.getLinks()) {
+                if ("alternate".equals(link.getRel())) {
+                    return link.getHref();
+                }
+            }
+            return null;
         }
 
         private boolean equal(Object a, Object b) {
@@ -134,10 +143,10 @@ class FeedBuilder {
         public int hashCode() {
 
             return com.google.common.base.Objects.hashCode(
-                    entry.getPublishedDate(),
                     entry.getAuthor(),
                     entry.getTitle(),
-                    entry.getLink());
+                    getAlternateLink(entry));
         }
+
     }
 }
