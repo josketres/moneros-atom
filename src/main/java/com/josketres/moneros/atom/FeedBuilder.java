@@ -6,11 +6,13 @@ import com.rometools.rome.feed.synd.*;
 import java.time.LocalDate;
 import java.util.*;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 class FeedBuilder {
 
     private CartoonRss[] entries;
     private LocalDate initialDate;
+    private SyndFeed mergeFeed;
 
     public SyndFeed build() {
 
@@ -31,6 +33,7 @@ class FeedBuilder {
     }
 
     private SyndLinkImpl createLink(String rel, String href) {
+
         SyndLinkImpl link = new SyndLinkImpl();
         link.setRel(rel);
         link.setHref(href);
@@ -39,12 +42,26 @@ class FeedBuilder {
 
     private List<SyndEntry> buildEntries() {
 
+        return Stream.concat(entriesStream(), mergeStream())
+                .distinct()
+                .sorted(Comparator.<SyndEntry, Date>comparing(e -> e.getPublishedDate()).reversed())
+                .collect(Collectors.toList());
+    }
+
+    private Stream<SyndEntry> mergeStream() {
+
+        if (mergeFeed == null) {
+            return Stream.empty();
+        } else {
+            return mergeFeed.getEntries().parallelStream();
+        }
+    }
+
+    private Stream<SyndEntry> entriesStream() {
         return Arrays.asList(entries)
                 .parallelStream()
                 .map(rss -> rss.setInitialDate(initialDate).read().parallelStream())
-                .flatMap(s -> s.map(c -> createEntry(c)))
-                .sorted(Comparator.<SyndEntry, Date>comparing(e -> e.getPublishedDate()).reversed())
-                .collect(Collectors.toList());
+                .flatMap(s -> s.map(c -> createEntry(c)));
     }
 
     private SyndEntry createEntry(Cartoon c) {
@@ -62,6 +79,7 @@ class FeedBuilder {
     }
 
     private List<SyndLink> buildEntryLinks(Cartoon c) {
+
         List<SyndLink> links = new ArrayList<>();
         links.add(createLink("image", c.image));
         links.add(createLink("alternate", c.link));
@@ -77,6 +95,12 @@ class FeedBuilder {
     public FeedBuilder initialDate(LocalDate initialDate) {
 
         this.initialDate = initialDate;
+        return this;
+    }
+
+    public FeedBuilder mergeWith(SyndFeed mergeFeed) {
+
+        this.mergeFeed = mergeFeed;
         return this;
     }
 }
