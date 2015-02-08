@@ -49,13 +49,20 @@ public class FeedBuilder {
         SyndEntryImpl entry = new SyndEntryImpl();
         entry.setTitle(c.title);
         entry.setAuthor(c.author);
-        entry.setLink(c.link);
+        entry.setLinks(buildEntryLinks(c));
         entry.setPublishedDate(c.publishedDate);
         SyndContent description = new SyndContentImpl();
-        description.setType("text/plain");
-        description.setValue(c.image);
+        description.setType("text/html");
+        description.setValue("<img src='" + c.image + "' />");
         entry.setDescription(description);
         return entry;
+    }
+
+    private List<SyndLink> buildEntryLinks(Cartoon c) {
+        List<SyndLink> links = new ArrayList<>();
+        links.add(createLink("image", c.image));
+        links.add(createLink("alternate", c.link));
+        return links;
     }
 
     public FeedBuilder entries(Stream<Cartoon> entries) {
