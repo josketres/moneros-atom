@@ -24,8 +24,8 @@ public class LaJornadaRssTest {
         String feedUrl = Paths.get("src/test/resources/jornada-unam-mx-rss-cartones.xml").toAbsolutePath().toUri().toString();
 
         LaJornadaRss rss = new LaJornadaRss();
-        rss.setCartoonUrlExtractor((reader, url) -> "http://moneros-atom.com/image.jpg"); // avoid making http calls in unit tests
-        rss.setTitleExtractor((reader, url) -> "Tras los huesos de Ebrard"); // avoid making http calls in unit tests
+        rss.setCartoonUrlExtractor(url -> "http://moneros-atom.com/image.jpg"); // avoid making http calls in unit tests
+        rss.setTitleExtractor(url -> "Tras los huesos de Ebrard"); // avoid making http calls in unit tests
         List<Cartoon> cartoons = rss.read(feedUrl);
         assertThat(cartoons, hasSize(4));
 

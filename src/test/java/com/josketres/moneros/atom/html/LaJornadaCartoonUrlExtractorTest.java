@@ -12,8 +12,8 @@ public class LaJornadaCartoonUrlExtractorTest {
     public void should_extract_the_image_url_from_the_html_page() {
 
         assertThat(new LaJornadaCartoonUrlExtractor()
-                        .extract(FileHtmlDocumentReader::readFromFile,
-                                "src/test/resources/jornada-unam-mx-article.html"),
+                        .setReader(FileHtmlDocumentReader::readFromFile)
+                        .extract("src/test/resources/jornada-unam-mx-article.html"),
                 equalTo("http://moneros-atom.com/cartones/magu.jpg"));
     }
 }

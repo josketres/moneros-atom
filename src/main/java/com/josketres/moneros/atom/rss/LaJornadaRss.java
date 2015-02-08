@@ -54,7 +54,7 @@ public class LaJornadaRss extends CartoonRss {
                 entry.getPublishedDate(),
                 entry.getLink(),
                 extractImage(entry.getLink()),
-                titleExtractor.extract(getHtmlDocumentReader(), entry.getLink()));
+                titleExtractor.extract(entry.getLink()));
     }
 
     public void setTitleExtractor(DataExtractor<String> titleExtractor) {
