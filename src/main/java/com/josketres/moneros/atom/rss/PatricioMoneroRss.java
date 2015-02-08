@@ -1,7 +1,6 @@
 package com.josketres.moneros.atom.rss;
 
 import com.josketres.moneros.atom.Cartoon;
-import com.josketres.moneros.atom.html.JsoupHelper;
 import com.josketres.moneros.atom.html.PatricioMoneroCartoonUrlExtractor;
 import com.rometools.rome.feed.synd.SyndFeed;
 import com.rometools.rome.io.FeedException;
@@ -42,7 +41,7 @@ public class PatricioMoneroRss extends CartoonRss {
                 .map(e -> new Cartoon("Patricio Monero",
                         e.getPublishedDate(),
                         e.getLink(),
-                        extractImage(JsoupHelper.connectAndGet(e.getLink())),
+                        extractImage(e.getLink()),
                         e.getTitle()))
                 .collect(Collectors.toList());
     }

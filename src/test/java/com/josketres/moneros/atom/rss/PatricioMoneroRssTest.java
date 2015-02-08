@@ -20,7 +20,7 @@ public class PatricioMoneroRssTest {
         String feedUrl = Paths.get("src/test/resources/patricio-monero-rss.xml").toAbsolutePath().toUri().toString();
 
         PatricioMoneroRss rss = new PatricioMoneroRss();
-        rss.setCartoonUrlExtractor(url -> "http://moneros-atom.com/image.jpg"); // avoid making http calls in unit tests
+        rss.setCartoonUrlExtractor((reader, url) -> "http://moneros-atom.com/image.jpg"); // avoid making http calls in unit tests
         List<Cartoon> cartoons = rss.read(feedUrl);
         assertThat(cartoons, hasSize(10));
 

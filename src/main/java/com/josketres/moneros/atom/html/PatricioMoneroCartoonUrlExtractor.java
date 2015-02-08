@@ -9,8 +9,9 @@ import org.jsoup.nodes.Element;
 public class PatricioMoneroCartoonUrlExtractor implements DataExtractor<String> {
 
     @Override
-    public String extract(Document doc) {
+    public String extract(HtmlDocumentReader reader, String url) {
 
+        Document doc = reader.readFromUrl(url);
         Element article = doc.getElementsByTag("article").first();
         Element img = article.getElementsByTag("img").first();
         return img.attr("src");

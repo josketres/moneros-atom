@@ -1,19 +1,34 @@
 package com.josketres.moneros.atom.rss;
 
+import com.josketres.moneros.atom.html.CachedHtmlDocumentReader;
 import com.josketres.moneros.atom.html.DataExtractor;
-import org.jsoup.nodes.Document;
+import com.josketres.moneros.atom.html.HtmlDocumentReader;
 
 public class CartoonRss {
 
     private DataExtractor<String> cartoonUrlExtractor;
+    private HtmlDocumentReader htmlDocumentReader;
+
+    public CartoonRss() {
+
+        htmlDocumentReader = new CachedHtmlDocumentReader();
+    }
 
     public void setCartoonUrlExtractor(DataExtractor cartoonUrlExtractor) {
 
         this.cartoonUrlExtractor = cartoonUrlExtractor;
     }
 
-    protected String extractImage(Document doc) {
+    public void setHtmlDocumentReader(HtmlDocumentReader htmlDocumentReader) {
+        this.htmlDocumentReader = htmlDocumentReader;
+    }
 
-        return cartoonUrlExtractor.extract(doc);
+    protected HtmlDocumentReader getHtmlDocumentReader() {
+        return htmlDocumentReader;
+    }
+
+    protected String extractImage(String url) {
+
+        return cartoonUrlExtractor.extract(htmlDocumentReader, url);
     }
 }

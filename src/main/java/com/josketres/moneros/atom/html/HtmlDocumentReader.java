@@ -3,7 +3,7 @@ package com.josketres.moneros.atom.html;
 import org.jsoup.nodes.Document;
 
 @FunctionalInterface
-public interface DataExtractor<T> {
+public interface HtmlDocumentReader {
 
-    T extract(HtmlDocumentReader reader, String url);
+    Document readFromUrl(String url);
 }
