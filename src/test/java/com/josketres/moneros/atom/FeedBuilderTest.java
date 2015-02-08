@@ -1,11 +1,12 @@
 package com.josketres.moneros.atom;
 
 import com.rometools.rome.feed.synd.SyndFeed;
-import com.rometools.rome.io.SyndFeedOutput;
 import org.junit.Test;
 
-import java.io.StringWriter;
 import java.util.Date;
+
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.notNullValue;
 
 public class FeedBuilderTest {
 
@@ -16,11 +17,6 @@ public class FeedBuilderTest {
                 .entries(CartoonRssMock.of(new Cartoon("Author", new Date(), "image.link", "image.src", "title")))
                 .build();
 
-        SyndFeedOutput output = new SyndFeedOutput();
-        StringWriter writer = new StringWriter();
-        output.output(feed, writer);
-
-        System.out.println(writer.getBuffer().toString());
-
+        assertThat(feed, notNullValue());
     }
 }
