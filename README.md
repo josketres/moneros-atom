@@ -10,5 +10,7 @@ This feed aggregates the political cartoons from the following sites:
 * http://www.monerohernandez.com.mx/MONOSAPIENS/monosapiens.html (html)
 * http://monerorape.com/cartones (html)
 
+## Archives
 
-This is an archived feed (http://greenbytes.de/tech/webdav/rfc5005.html#rfc.section.4)
+This feed is archived in a weekly basis.
+See http://greenbytes.de/tech/webdav/rfc5005.html#rfc.section.4 for more information baout archived feeds.
