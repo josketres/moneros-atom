@@ -9,6 +9,10 @@ This project creates a feed aggregating the political cartoons from the followin
 * http://opinion.informador.com.mx/Cartuchos/feed/ (rss)
 * http://www.monerohernandez.com.mx/MONOSAPIENS/monosapiens.html (html)
 * http://monerorape.com/cartones (html)
+* http://www.elchamuco.com.mx/new/index.php/hijos-del-averno/el-fisgon?format=feed&type=rss (rss)
+* http://www.elchamuco.com.mx/new/index.php/hijos-del-averno/hernandez?format=feed&type=rss (rss)
+* http://www.elchamuco.com.mx/new/index.php/hijos-del-averno/patricio?format=feed&type=rss (rss)
+* http://www.elchamuco.com.mx/new/index.php/hijos-del-averno/rius?format=feed&type=rss (rss)
 
 ## Main feed
 
