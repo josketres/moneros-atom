@@ -13,4 +13,5 @@ This feed aggregates the political cartoons from the following sites:
 ## Archives
 
 This feed is archived in a weekly basis.
+
 See http://greenbytes.de/tech/webdav/rfc5005.html#rfc.section.4 for more information baout archived feeds.
