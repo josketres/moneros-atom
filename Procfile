@@ -1,1 +1,1 @@
-clock: ./run.sh
+clock: ./build/install/moneros-atom/bin/moneros-atom

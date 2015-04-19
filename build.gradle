@@ -25,5 +25,6 @@ dependencies {
 }
 
 mainClassName = "com.josketres.moneros.atom.Main"
+applicationName = "moneros-atom"
 
 task stage(dependsOn: ['clean', 'installApp'])
