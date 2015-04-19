@@ -14,10 +14,7 @@ import org.quartz.JobExecutionException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.Reader;
-import java.io.Writer;
+import java.io.*;
 import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -33,15 +30,39 @@ public class FetchCartoonsJob implements Job {
     @Override
     public void execute(JobExecutionContext context) throws JobExecutionException {
 
-        LOG.info("Fetching cartoons, using current atom url: " + CURRENT_ATOM_URL);
+        LocalDate initialDate = LocalDate.of(2015, Month.FEBRUARY, 1);
+
+        LOG.info("Fetching cartoons, using current atom url: ({}) and initial-date: ({}) ",
+                CURRENT_ATOM_URL, initialDate);
 
         SyndFeed feed = new FeedBuilder()
-                .initialDate(LocalDate.of(2015, Month.FEBRUARY, 1))
+                .initialDate(initialDate)
                 .entries(new PatricioRss(),
                         new LaJornadaRss(),
                         new QuchoRss())
                 .mergeWith(readCurrentFromServer())
                 .build();
+
+        writeFeed(feed);
+
+        deployToGitHubPages();
+    }
+
+    private void deployToGitHubPages() {
+        
+        try {
+            Process process = new ProcessBuilder(System.getProperty("user.dir") + "/deploy_website.sh").start();
+            BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
+            String line = null;
+            while ((line = reader.readLine()) != null) {
+                LOG.info(line);
+            }
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    private void writeFeed(SyndFeed feed) {
 
         try {
             if (!Files.exists(Paths.get("website"))) {
