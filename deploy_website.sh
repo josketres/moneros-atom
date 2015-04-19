@@ -6,6 +6,7 @@ REPO="git@github.com:josketres/moneros-atom.git"
 
 DIR=temp-clone
 
+
 # Delete any existing temporary website clone
 rm -rf $DIR
 
