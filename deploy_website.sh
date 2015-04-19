@@ -9,14 +9,18 @@ DIR=temp-clone
 # Delete any existing temporary website clone
 rm -rf $DIR
 
+echo $GH_DEPLOYMENT_KEY > deploy-key
+
 # Clone the current repo into temp folder
-git clone $REPO $DIR
+ssh-agent sh -c "ssh-add deploy-key; git clone $REPO $DIR"
+# git clone $REPO $DIR
 
 # Move working directory into temp folder
 cd $DIR
 
 # Checkout and track the gh-pages branch
-git checkout -t origin/gh-pages
+ssh-agent sh -c 'ssh-add moneros-atom-deploy-key; git checkout -t origin/gh-pages'
+#git checkout -t origin/gh-pages
 
 # Delete everything
 rm -rf *
