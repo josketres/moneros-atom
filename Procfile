@@ -1,1 +1,1 @@
-clock: ./gradlew run
+clock: ./build/install/moneros-atom/bin/moneros-atom
