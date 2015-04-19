@@ -43,22 +43,38 @@ public class FetchCartoonsJob implements Job {
                 .mergeWith(readCurrentFromServer())
                 .build();
 
+        LOG.info("Writing feed");
         writeFeed(feed);
 
-        deployToGitHubPages();
+        LOG.info("Publishing feed to GitHub pages");
+        publishInGitHubPages();
+
+        LOG.info("Done");
     }
 
-    private void deployToGitHubPages() {
-        
+    private void publishInGitHubPages() {
+
         try {
             Process process = new ProcessBuilder(System.getProperty("user.dir") + "/deploy_website.sh").start();
-            BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
-            String line = null;
-            while ((line = reader.readLine()) != null) {
-                LOG.info(line);
+            log(process.getInputStream());
+            log(process.getErrorStream());
+
+            if (process.exitValue() == 0) {
+                LOG.info("Publish successful");
+            } else {
+                LOG.info("Publish step exited with code {}", process.exitValue());
             }
         } catch (IOException e) {
             throw new RuntimeException(e);
+        }
+    }
+
+    private void log(InputStream stream) throws IOException {
+        
+        BufferedReader reader = new BufferedReader(new InputStreamReader(stream));
+        String line = null;
+        while ((line = reader.readLine()) != null) {
+            LOG.info(line);
         }
     }
 
